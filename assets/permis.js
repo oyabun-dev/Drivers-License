@@ -1,5 +1,13 @@
 // @ts-check
 
+function scrolling() {
+    window.scrollTo(0, 700);
+}
+
+// let startMenu = document.getElementById('startMenu');
+// // @ts-ignore
+// startMenu.addEventListener('click', scrolling);
+
 var pageList = [1,2,];
 var pageNumber = 1;
 

@@ -1,0 +1,149 @@
+:root {
+    --res: calc(0.01 * 10vmin);
+    --main_color: #a3622f;
+}
+
+/* Path: assets/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+
+header#navbar {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    width: 100vw;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: end;
+}
+
+header#navbar nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header#navbar nav.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header#navbar nav.navbar ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+header#navbar nav.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+header#navbar nav.navbar ul li a:hover {
+    color: var(--main_color);
+}
+
+/* header#navbar nav.navbar ul li#startMenu {
+    
+} */
+
+header#navbar nav.navbar ul li#getStarted a {
+    background-color: var(--main_color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.525);
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+header#navbar nav.navbar ul li#getStarted a:hover {
+    background-color: transparent;
+    color: var(--main_color);
+}
+
+section.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.landing p#imgContainer {
+    height: 100vh;
+    width: 100vw;
+}
+
+section.landing p#imgContainer img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+section.landing div.greets {
+    position: relative;
+    top: -40%;
+    left: -25%;
+}
+
+section.landing div.greets h1 {
+    font-size: calc(60 * var(--res));
+    color: #c9d2d7;
+    text-shadow: #0000008a 2px 2px;
+    padding: 1rem;
+}
+
+section.landing div.greets h4 {
+    font-size: calc(30 * var(--res));
+    color: #915621;
+    text-shadow: #000000ba 2px 2px;
+    padding: 1rem;
+}
+
+section.landing button#go_down {
+    position: relative;
+    top: -30%;
+    left: 45%;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+section.landing button#go_down:hover {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+section.landing button#go_down p img {
+    width: 50px;
+    height: 50px;
+}
+
+section#startMenu {
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
