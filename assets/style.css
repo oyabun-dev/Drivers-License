@@ -1,6 +1,8 @@
 :root {
     --res: calc(0.01 * 10vmin);
     --main_color: #a3622f;
+    --primary: #c9d2d7;
+    --secondary: #915621;
 }
 
 /* Path: assets/style.css */
@@ -17,9 +19,10 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
     padding: 0;
     margin: 0;
+    /* background-color: var(--main_color); */
+    background-color: white;
 }
 
 header#navbar {
@@ -105,14 +108,14 @@ section.landing div.greets {
 
 section.landing div.greets h1 {
     font-size: calc(60 * var(--res));
-    color: #c9d2d7;
+    color: var(--primary);
     text-shadow: #0000008a 2px 2px;
     padding: 1rem;
 }
 
 section.landing div.greets h4 {
     font-size: calc(30 * var(--res));
-    color: #915621;
+    color: var(--secondary);
     text-shadow: #000000ba 2px 2px;
     padding: 1rem;
 }
@@ -139,11 +142,48 @@ section.landing button#go_down p img {
 }
 
 section#startMenu {
-    margin-top: 100px;
+    /* margin-top: 1px; */
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
+    /* background-color: var(--main_color); */
+}
+
+section#startMenu div.greets {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+section#startMenu form[name="license_type_form"] {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+section#startMenu form[name="license_type_form"] select#type {
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 1rem;
+    font-size: calc(20 * var(--res));
+    background-color: var(--primary);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+section#startMenu form[name="license_type_form"] select#type option.drivers_license_type {
+    background-color: var(--secondary);
+    color: var(--primary);
 }
