@@ -13,7 +13,6 @@
 }
 
 html {
-    /* font-size: 62.5%; */
     scroll-behavior: smooth;
 }
 
@@ -21,7 +20,6 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
-    /* background-color: var(--main_color); */
     background-color: white;
 }
 
@@ -81,7 +79,7 @@ header#navbar nav.navbar ul li#getStarted a:hover {
 
 section.landing {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,14 +140,12 @@ section.landing button#go_down p img {
 }
 
 section#startMenu {
-    /* margin-top: 1px; */
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    /* background-color: var(--main_color); */
 }
 
 section#startMenu div.greets {
@@ -167,7 +163,6 @@ section#startMenu form[name="license_type_form"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
 }
 
 section#startMenu form[name="license_type_form"] select#type {
