@@ -14,6 +14,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
@@ -119,9 +120,10 @@ section.landing div.greets h4 {
 }
 
 section.landing button#go_down {
-    position: relative;
-    top: -30%;
-    left: 45%;
+    position: fixed;
+    z-index: 4;
+    top: 90%;
+    left: 95%;
     background-color: transparent;
     border: none;
     border-radius: 50%;
@@ -134,16 +136,40 @@ section.landing button#go_down:hover {
     backdrop-filter: blur(3px);
 }
 
-section.landing button#go_down p img {
+section.landing button#go_down p img#down_image {
     width: 50px;
     height: 50px;
 }
 
+section.landing button#go_up {
+    position: fixed;
+    z-index: 4;
+    top: 90%;
+    left: 95%;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+section.landing button#go_up:hover {
+    background-color: #00000013;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+section.landing button#go_up p img#up_image {
+    width: 50px;
+    height: 50px;
+    rotate: 180deg;
+}
+
 section#startMenu {
     width: 100vw;
-    height: 85vh;
+    height: 90vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -155,7 +181,7 @@ section#startMenu div.greets {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin: 4rem;
+    margin: 1rem;
 }
 
 section#startMenu form[name="license_type_form"] {
