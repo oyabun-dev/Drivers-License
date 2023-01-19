@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,6 +7,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Permis</title>
 </head>
+
 <body>
     <!-- header -->
     <header id="navbar">
@@ -17,7 +19,7 @@
         </nav>
     </header>
     <!-- landing page -->
-    <section id="#home" class="landing">
+    <section id="home" class="landing">
         <p id="imgContainer">
             <img id="landingImg" src="./assets/img/main_background.jpg" alt="background_image">
         </p>
@@ -25,34 +27,40 @@
             <h1 class="title">Highway code Test</h1>
             <h4 class="subtitle">Pass the Highway Code Exam online</h4>
         </div>
-        <button id="go_down"><p><img id="down_image" src="./assets/img/go_down.png" alt="down_arrow"></p></button>
-        <button hidden id="go_up"><p><img id="up_image" src="./assets/img/go_up.png" alt="up_arrow"></p></button>
+        <button id="go_down">
+            <p><img id="down_image" src="./assets/img/go_down.png" alt="down_arrow"></p>
+        </button>
+        <button hidden id="go_up">
+            <p><img id="up_image" src="./assets/img/go_up.png" alt="up_arrow"></p>
+        </button>
     </section>
     <!-- start menu -->
     <section id="startMenu">
         <div class="greets">
             <h1 class="title">Let's Get Started</h1>
-            <!-- <h4 class="subtitle">Select a Type</h4> -->
         </div>
         <form name="license_type_form" action="submit">
-            <label for="type">Select a Driver's LicenseType </label>
-            <select name="drivers_license_type" id="type" title="drivers_license_type">
-                <option value="B1" class="drivers_license_type">B1</option>
-                <option value="B2" class="drivers_license_type">B2</option>
-                <option value="B3" class="drivers_license_type">B3</option>
-                <option value="B4" class="drivers_license_type">B4</option>
-                <option value="B5" class="drivers_license_type">B5</option>
-                <option value="B6" class="drivers_license_type">B6</option>
-                <option value="B7" class="drivers_license_type">B7</option>
-                <option value="B8" class="drivers_license_type">B8</option>
-                <option value="B9" class="drivers_license_type">B9</option>
-                <option value="B10" class="drivers_license_type">B10</option>
-                <option value="B11" class="drivers_license_type">B11</option>
-                <option value="B12" class="drivers_license_type">B12</option>
-            </select>
+            <div class="form_control">
+                <label for="type">Select a Driver's LicenseType </label>
+                <select name="drivers_license_type" id="type" title="drivers_license_type">
+                    <option value="B1" class="drivers_license_type">B1</option>
+                    <option value="B2" class="drivers_license_type">B2</option>
+                    <option value="B3" class="drivers_license_type">B3</option>
+                    <option value="B4" class="drivers_license_type">B4</option>
+                    <option value="B5" class="drivers_license_type">B5</option>
+                    <option value="B6" class="drivers_license_type">B6</option>
+                    <option value="B7" class="drivers_license_type">B7</option>
+                    <option value="B8" class="drivers_license_type">B8</option>
+                    <option value="B9" class="drivers_license_type">B9</option>
+                    <option value="B10" class="drivers_license_type">B10</option>
+                    <option value="B11" class="drivers_license_type">B11</option>
+                    <option value="B12" class="drivers_license_type">B12</option>
+                </select>
+            </div>
             <a class="getStarted" href="exam.html">Get Started</a>
         </form>
     </section>
     <script src="./assets/driversLicence.js"></script>
 </body>
+
 </html>

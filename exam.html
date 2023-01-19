@@ -7,24 +7,33 @@
     <title>Examen</title>
 </head>
 <body>
-    <main>
-        <p class="imgContainer">
-            <img src="./assets/img/B01/B1-01.JPG" alt="B-01">
-        </p>
-        <form action="submit" name="B1-01">
-            <label for="A">A</label>
-            <input type="checkbox" name="A" id="A" title="A answer">
-            <label for="B">B</label>
-            <input type="checkbox" name="B" id="B" title="B answer">
-            <label for="C">C</label>
-            <input type="checkbox" name="C" id="C" title="C answer">
-            <label for="D">D</label>
-            <input type="checkbox" name="D" id="D" title="D answer">
-            <button name="previous" type="submit">Previous</button>
-            <button name="next" type="submit">Next</button>
-        </form>
-    </main>
-
+    <div id="container">
+        <header id="navbar">
+            <nav class="navbar">
+                <ul>
+                    <li id="home"><a href="./index.html#home">Home</a></li>
+                    <li id="getStarted"><a href="./index.html#startMenu">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p id="img_container">
+                <img id="exam_img" src="./assets/img/B01/B1-1.jPG" alt="B-01">
+            </p>
+            <form id="exam_form" action="submit" name="B1-01">
+                <label for="A">A</label>
+                <input type="checkbox" name="A" id="A" title="A answer">
+                <label for="B">B</label>
+                <input type="checkbox" name="B" id="B" title="B answer">
+                <label for="C">C</label>
+                <input type="checkbox" name="C" id="C" title="C answer">
+                <label for="D">D</label>
+                <input type="checkbox" name="D" id="D" title="D answer">
+                <button id="previous" name="previous" type="submit"><p id="left_arrow_container"><img src="./assets/img/left_arrow.png" alt="go_left" id="left_arrow"></p></button>
+                <button id="next" name="next" type="submit"><p id="right_arrow_container"><img src="./assets/img/right_arrow.png" alt="go_left" id="right_arrow"></p></button>
+            </form>
+        </main>
+    </div>
     <script src="./assets/driversLicence.js"></script>
 </body>
 </html>

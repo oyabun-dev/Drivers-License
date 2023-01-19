@@ -2,6 +2,11 @@
 
 let go_down = document.getElementById('go_down');
 let go_up = document.getElementById('go_up');
+let getStarted = document.getElementById('getStarted');
+
+go_down?go_down.addEventListener('click', scrollDown):console.error('go_down is null');
+go_up?go_up.addEventListener('click', scrollUp):console.error('go_up is null');
+getStarted?getStarted.addEventListener('click', scrollDown):console.error('getStarted is null');
 
 
 function scrollDown() {
@@ -14,17 +19,10 @@ function scrollUp() {
     go_up?go_up.toggleAttribute('hidden'):console.error('go_up is null');
     go_down?go_down.removeAttribute('hidden'):console.error('go_down is null')  ;
 }
-    // @ts-ignore
-go_down.addEventListener('click', scrollDown);
-    // @ts-ignore
-go_up.addEventListener('click', scrollUp);
 
-let getStarted = document.getElementById('getStarted');
-// @ts-ignore
-getStarted.addEventListener('click', scrollDown);
-
-var pageList = [1,2,];
+var pageList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
 var pageNumber = 1;
+var type = 'B1';
 
 function togglePage(position) {
     if (position === "next") {
@@ -32,22 +30,25 @@ function togglePage(position) {
     } else {
         previousPage();
     }
-}
-
+}   
 function nextPage(pageNumber) {                         // 03
     ++pageNumber;                                       //04 
     if (pageList.includes(pageNumber)) {                
-        let pageImage = 'B' + pageNumber + '.jpg';      //B04.jpg
+        let pageImage = type + '-' + pageNumber + '.jpg';      //B04.jpg
+    }
+    else {
+        // disable next button
     }
 }
 function previousPage(pageNumber) {                         // 03
     --pageNumber;                                       //04 
     if (pageList.includes(pageNumber)) {                
-        let pageImage = 'B' + pageNumber + '.jpg';      //B04.jpg
+        let pageImage = type + '-' + pageNumber + '.jpg';      //B04.jpg
+    }
+    else {
+        // disable previous button
     }
 }
-
-
 // position.addEventListener('click', ()=> {
 //     if (position.name == 'next') {
 //         pos = "next";
