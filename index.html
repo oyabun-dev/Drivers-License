@@ -39,7 +39,7 @@
         <div class="greets">
             <h1 class="title">Let's Get Started</h1>
         </div>
-        <form name="license_type_form" action="submit">
+        <form name="license_type_form" action="./index.php" method="get">
             <div class="form_control">
                 <label for="type">Select a Driver's LicenseType </label>
                 <select name="drivers_license_type" id="type" title="drivers_license_type">
@@ -57,10 +57,10 @@
                     <option value="B12" class="drivers_license_type">B12</option>
                 </select>
             </div>
-            <a class="getStarted" href="exam.html">Get Started</a>
+            <button id="start_test" type="submit">Start Test</button>
         </form>
     </section>
-    <script src="./assets/driversLicence.js"></script>
+    <script type="module" src="./assets/landing.js"></script>
 </body>
 
 </html>

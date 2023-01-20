@@ -209,7 +209,7 @@ section#startMenu form[name="license_type_form"] div.form_control select#type op
     color: var(--secondary);
 }
 
-section#startMenu form[name="license_type_form"] a.getStarted {
+section#startMenu form[name="license_type_form"] button#start_test {
     position: relative;
     bottom: -90%;
     left: 20%;
@@ -228,7 +228,7 @@ section#startMenu form[name="license_type_form"] a.getStarted {
     align-items: center;
 }
 
-section#startMenu form[name="license_type_form"] a.getStarted:hover {
+section#startMenu form[name="license_type_form"] button#start_test:hover {
     background-color: var(--secondary);
     color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.525);
@@ -253,25 +253,50 @@ div#container main {
     flex-direction: column;
 }
 
-/* div#container main p#img_container {
-    height: 70vh;
-    width: 80vw;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.525);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-} */
-
-div#container main p#img_container img#exam_img {
-    height: 64vh;
+div#container main p#img_container img#exam_couv {
+    height: 55vh;
     width: 40vw;
     object-fit: contain;
     object-position: center;
     border-radius: 20px;
     box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.638);
+}
+
+div#container main p#img_container img#exam_img {
+    height: 55vh;
+    width: 40vw;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 20px;
+    box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.638);
+}
+
+div#container main button#start {
+    position: relative;
+    bottom: 10%;
+    left: 0;
+    width: 10%;
+    height: 50px;
+    border: none;
+    background-color: var(--main_color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.525);
+    outline: none;
+    padding: 0 1rem;
+    font-size: calc(35 * var(--res));
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+div#container main button#start:hover {
+    background-color: var(--secondary);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.625);
+    transform: scale(1.05);
 }
 
 div#container main form#exam_form {
@@ -324,12 +349,20 @@ div#container main form#exam_form button#previous {
     width: 70px;
     background-color: #0000004d;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.811);
+    transition: .4s;
 }
 
-div#container main form#exam_form button#previous:hover {
+div#container main form#exam_form button#previous:hover:enabled {
     background-color: #000000a2;
     transform: scale(1.1);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.811);
+}
+
+div#container main form#exam_form button#previous:disabled {
+    background-color: #0000004d;
+    transform: scale(1);
+    cursor: default;
+    filter: blur(2px);
 }
 
 div#container main form#exam_form button#next {
@@ -350,10 +383,17 @@ div#container main form#exam_form button#next {
     width: 70px;
     background-color: #0000004d;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.811);
+    transition: .4s;
 }
 
-div#container main form#exam_form button#next:hover {
+div#container main form#exam_form button#next:hover:enabled {
     background-color: #000000a2;
     transform: scale(1.1);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.811);
+}
+
+div#container main form#exam_form button#next:disabled {
+    background-color: #0000004d;
+    cursor: default;
+    filter: blur(2px);
 }
