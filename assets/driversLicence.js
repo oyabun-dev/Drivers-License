@@ -53,3 +53,4 @@ function previousPage(e) {
     }
 }
 
+// i'm left with only answers collection and the result page
