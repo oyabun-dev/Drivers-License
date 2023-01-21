@@ -27,13 +27,13 @@
             <button id="start">Start</button>
             <form hidden id="exam_form" action='' name="B1-01">
                 <label for="A">A</label>
-                <input type="checkbox" name="A" id="A" title="A answer">
+                <input type="checkbox" value="A" id="A" title="A answer">
                 <label for="B">B</label>
-                <input type="checkbox" name="B" id="B" title="B answer">
+                <input type="checkbox" value="B" id="B" title="B answer">
                 <label for="C">C</label>
-                <input type="checkbox" name="C" id="C" title="C answer">
+                <input type="checkbox" value="C" id="C" title="C answer">
                 <label for="D">D</label>
-                <input type="checkbox" name="D" id="D" title="D answer">
+                <input type="checkbox" value="D" id="D" title="D answer">
                 <button id="previous" name="previous"><p id="left_arrow_container"><img src="./assets/img/left_arrow.png" alt="go_left" id="left_arrow"></p></button>
                 <button id="next" name="next"><p id="right_arrow_container"><img src="./assets/img/right_arrow.png" alt="go_left" id="right_arrow"></p></button>
             </form>
