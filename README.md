@@ -28,7 +28,7 @@
   Contributions are welcome! To contribute, please fork the repository and create a pull request.
 
 # License
-This project is licensed under the MIT License.
+  This project is licensed under the MIT License.
 
 # Credits
-Wordle Masters was created by [kHALIFA ABABACAR BEYE].
+  Wordle Masters was created by Khalifa Ababacar BEYE.
